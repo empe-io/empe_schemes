@@ -1,0 +1,27 @@
+{
+    "@context": [
+        {
+            "@protected": true,
+            "@version": 1.1,
+            "id": "@id",
+            "type": "@type",
+            "proofOfAge": {
+                "@context": {
+                    "@propagate": true,
+                    "@protected": true,
+                    "polygon-vocab": "urn:uuid:14c2f9fd-1b2b-47e1-80a2-bc86fc830edf#",
+                    "xsd": "http://www.w3.org/2001/XMLSchema#",
+                    "baseCredentialId": {
+                        "@id": "polygon-vocab:baseCredentialId",
+                        "@type": "xsd:string"
+                    },
+                    "reached21YearsOfAge": {
+                        "@id": "polygon-vocab:reached21YearsOfAge",
+                        "@type": "xsd:boolean"
+                    }
+                },
+                "@id": "urn:uuid:612981ce-24f4-4957-aa4c-ca93c0eab000"
+            }
+        }
+    ]
+}

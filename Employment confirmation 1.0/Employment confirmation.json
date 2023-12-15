@@ -1,0 +1,275 @@
+{
+    "$metadata": {
+        "uris": {
+            "jsonLdContext": "https://example.com/path/to/file/context.jsonld"
+        },
+        "version": "1.0",
+        "type": "verifiedEmployment"
+    },
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "Credential containing data describing personal work experience of the person being the subject of the credential.",
+    "title": "Employment confirmation",
+    "properties": {
+        "credentialSubject": {
+            "description": "Stores the data of the credential",
+            "title": "Credential subject",
+            "properties": {
+                "confirmationDate": {
+                    "default": "YYYY-MM-DD",
+                    "description": "Date the attester confirmed the data of employment.",
+                    "title": "Confirmation date",
+                    "format": "date",
+                    "type": "string"
+                },
+                "attesterID": {
+                    "description": "Any ID that can be related to attester e.g. email within the employer domain name.",
+                    "title": "Attester ID",
+                    "type": "string"
+                },
+                "attesterRole": {
+                    "description": "Role of the person being the attester of the data within employer legal structures.",
+                    "title": "Attester role",
+                    "type": "string"
+                },
+                "attesterFormalRelation": {
+                    "description": "Formal relation of the data attester to person being the subject of the credential.",
+                    "title": "Attester formal relation",
+                    "type": "string"
+                },
+                "positionDetails": {
+                    "description": "Information about the position of the person being the subject of the credential within the employer formal structures.",
+                    "title": "Position details",
+                    "properties": {
+                        "salary": {
+                            "description": "Salary data.",
+                            "title": "Salary",
+                            "properties": {
+                                "salaryCurrencyIso": {
+                                    "description": "ISO code for salary currency.",
+                                    "title": "Salary currency ISO",
+                                    "type": "string"
+                                },
+                                "salaryValue": {
+                                    "description": "Numerical value.",
+                                    "title": "Salary value",
+                                    "type": "number"
+                                },
+                                "salaryRate": {
+                                    "description": "Daily / monthly / yearly",
+                                    "title": "Salary rate",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [],
+                            "type": "object"
+                        },
+                        "employmentDateTo": {
+                            "default": "YYYY-MM-DD",
+                            "description": "Date that employment finished. Can be null if it`s still ongoing.",
+                            "title": "Employment date to",
+                            "format": "date",
+                            "type": "string"
+                        },
+                        "employmentDateFrom": {
+                            "default": "YYYY-MM-DD",
+                            "description": "Date that employment started.",
+                            "title": "Employment date from",
+                            "format": "date",
+                            "type": "string"
+                        },
+                        "recipientRole": {
+                            "description": "Name of the role or position of the person being the subject of the credential.",
+                            "title": "Recipient role",
+                            "type": "string"
+                        },
+                        "roleDescription": {
+                            "description": "Description of the role.",
+                            "title": "Role description",
+                            "type": "string"
+                        },
+                        "employmentType": {
+                            "description": "Type of the formal connection between employer and the person being the subject of the credential.",
+                            "title": "Employment type",
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "employmentDateFrom",
+                        "recipientRole",
+                        "employmentType"
+                    ],
+                    "type": "object"
+                },
+                "legalEmployer": {
+                    "description": "Data regarding employer as the side confirming information used in credential.",
+                    "title": "Legal employer",
+                    "properties": {
+                        "image": {
+                            "description": "Graphical representation of logo of the employer. File format: JPG, PNG or SVG file. For PNG or JPG: 300px x 300px minimum, maximum size 500kb.",
+                            "title": "Image",
+                            "type": "string"
+                        },
+                        "employerIdentifier": {
+                            "description": "ID number that allows to verify legal state of the employer e.g. tax identification number.",
+                            "title": "Employer identifier",
+                            "type": "string"
+                        },
+                        "employerName": {
+                            "description": "Name of the subject employer.",
+                            "title": "Employer name",
+                            "type": "string"
+                        },
+                        "employerType": {
+                            "description": "Default: organization",
+                            "title": "Employer type",
+                            "type": "string"
+                        },
+                        "place": {
+                            "description": "Set of information regarding legal employer localization.",
+                            "title": "Place",
+                            "properties": {
+                                "addressCountry": {
+                                    "description": "Country name where the place is located.",
+                                    "title": "Address country",
+                                    "type": "string"
+                                },
+                                "addressRegion": {
+                                    "description": "The region where the place ic located be it state or province.",
+                                    "title": "Address region",
+                                    "type": "string"
+                                },
+                                "addressLocality": {
+                                    "description": "The localization where the place is positioned e.g. detailed address or town.",
+                                    "title": "Address locality",
+                                    "type": "string"
+                                },
+                                "placeName": {
+                                    "description": "The name of the place that legal employer is localized at e.g. building name.",
+                                    "title": "Place name",
+                                    "type": "string"
+                                },
+                                "placeType": {
+                                    "description": "Default: Place",
+                                    "title": "Place type",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [],
+                            "type": "object"
+                        }
+                    },
+                    "required": [],
+                    "type": "object"
+                },
+                "recipient": {
+                    "description": "Information about the recipient of the credential.",
+                    "title": "Recipient details",
+                    "properties": {
+                        "kycCredentialId": {
+                            "description": "ID of the KYC credential validating the person being the subject of the credential.",
+                            "title": "KYC credential ID",
+                            "type": "string"
+                        },
+                        "familyName": {
+                            "description": "Current family name of the person being the subject of the credential.",
+                            "title": "Family name",
+                            "type": "string"
+                        },
+                        "secondName": {
+                            "description": "Second name of the person being the subject of the credential.",
+                            "title": "Second name",
+                            "type": "string"
+                        },
+                        "firstName": {
+                            "description": "First name of the person being the subject of the credential.",
+                            "title": "First name",
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "type": "object"
+                },
+                "id": {
+                    "description": "Stores the DID of the subject that owns the credential",
+                    "title": "Credential subject ID",
+                    "format": "uri",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "confirmationDate",
+                "attesterRole"
+            ],
+            "type": "object"
+        },
+        "@context": {
+            "type": [
+                "string",
+                "array",
+                "object"
+            ]
+        },
+        "expirationDate": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "issuanceDate": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "issuer": {
+            "type": [
+                "string",
+                "object"
+            ],
+            "format": "uri",
+            "properties": {
+                "id": {
+                    "format": "uri",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id"
+            ]
+        },
+        "type": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "items": {
+                "type": "string"
+            }
+        },
+        "credentialSchema": {
+            "properties": {
+                "id": {
+                    "format": "uri",
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "type"
+            ],
+            "type": "object"
+        }
+    },
+    "required": [
+        "credentialSubject",
+        "@context",
+        "id",
+        "issuanceDate",
+        "issuer",
+        "type",
+        "credentialSchema"
+    ],
+    "type": "object"
+}
