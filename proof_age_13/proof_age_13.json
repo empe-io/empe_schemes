@@ -1,0 +1,109 @@
+{
+  "$metadata": {
+    "type": "empeProofOfAge13",
+    "uris": {
+      "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/proof_age_13_ld.json"
+    },
+    "version": "1.0.1"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Credential dedicated to ZK (zero knowledge) proof of reaching the age of 13 by person beeing the subject of the credential.",
+  "title": "Proof of age - over 13",
+  "properties": {
+    "@context": {
+      "type": [
+        "string",
+        "array",
+        "object"
+      ]
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "format": "uri",
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "type": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "credentialSubject": {
+      "description": "Stores the data of the credential",
+      "title": "Credential subject",
+      "properties": {
+        "baseCredentialId": {
+          "description": "Id of the base credential (fe. KYC verified credential) that is the source of proven data used to conclude the possibility to confirm age of person beeing the subject of the credential.",
+          "title": "base_credential_id",
+          "type": "string"
+        },
+        "reached13YearsOfAge": {
+          "description": "Value of 1 can be used as a confirmation state.",
+          "title": "reached_13_years_of_age",
+          "type": "boolean"
+        },
+        "id": {
+          "description": "Stores the DID of the subject that owns the credential",
+          "title": "Credential subject ID",
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reached13YearsOfAge"
+      ],
+      "type": "object"
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "@context",
+    "id",
+    "issuanceDate",
+    "issuer",
+    "type",
+    "credentialSubject",
+    "credentialSchema"
+  ],
+  "type": "object"
+}

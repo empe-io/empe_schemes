@@ -1,14 +1,14 @@
 {
     "$metadata": {
         "uris": {
-            "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/proof_age_18/proof_age_18_ld"
+            "jsonLdContext": "https://example.com/path/to/file/context.jsonld"
         },
-        "type": "empeProofOfAge18",
+        "type": "proofOfAge",
         "version": "1.0"
     },
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "description": "Credential dedicated to ZK (zero knowledge) proof of reaching the age of 18 by person beeing the subject of the credential.",
-    "title": "Proof of age - over 18",
+    "description": "Credential dedicated to ZK (zero knowledge) proof of reaching the age of 21 by person beeing the subject of the credential.",
+    "title": "Proof of age - over 21",
     "properties": {
         "credentialSubject": {
             "description": "Stores the data of the credential",
@@ -19,9 +19,9 @@
                     "title": "base_credential_id",
                     "type": "string"
                 },
-                "reached18YearsOfAge": {
+                "reached21YearsOfAge": {
                     "description": "Value of 1 can be used as a confirmation state.",
-                    "title": "reached_18_years_of_age",
+                    "title": "reached_21_years_of_age",
                     "type": "boolean"
                 },
                 "id": {
@@ -32,7 +32,7 @@
                 }
             },
             "required": [
-                "reached18YearsOfAge"
+                "reached21YearsOfAge"
             ],
             "type": "object"
         },
