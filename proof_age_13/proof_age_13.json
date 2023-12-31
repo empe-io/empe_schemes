@@ -2,7 +2,7 @@
   "$metadata": {
     "type": "empeProofOfAge13",
     "uris": {
-      "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/proof_age_13_ld.json"
+      "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/proof_age_13/proof_age_13_ld.json"
     },
     "version": "1.0.1"
   },
