@@ -1,7 +1,7 @@
 {
     "$metadata": {
         "uris": {
-            "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/Proof%20of%20age%20-%20over%2018%201.0/Proof%20of%20age%20-%20over%2018.jsonld"
+            "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/proof_of_age_over_18_1.0/proof_of_age_over_18.jsonld"
         },
         "type": "proofOfAge",
         "version": "1.0"
