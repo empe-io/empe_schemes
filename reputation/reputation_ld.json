@@ -1,0 +1,39 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "empeReputationLevel": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:cbd168f3-27f2-464e-8c68-3bde938324b6#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "maxReputationLevel": {
+            "@id": "polygon-vocab:maxReputationLevel",
+            "@type": "xsd:string"
+          },
+          "reputationLevelDescription": {
+            "@id": "polygon-vocab:reputationLevelDescription",
+            "@type": "xsd:string"
+          },
+          "reputationAchievementDate": {
+            "@id": "polygon-vocab:reputationAchievementDate",
+            "@type": "xsd:dateTime"
+          },
+          "reputationLevelNumericalValue": {
+            "@id": "polygon-vocab:reputationLevelNumericalValue",
+            "@type": "xsd:integer"
+          },
+          "reputationLevelName": {
+            "@id": "polygon-vocab:reputationLevelName",
+            "@type": "xsd:string"
+          }
+        },
+        "@id": "urn:uuid:15c944e3-3f5f-4068-85ed-391b68e800aa"
+      }
+    }
+  ]
+}

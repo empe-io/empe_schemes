@@ -1,0 +1,144 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "verifiedEmployment": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:62ec854e-9bb7-4962-a739-810f1d4c6f0c#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "confirmationDate": {
+            "@id": "polygon-vocab:confirmationDate",
+            "@type": "xsd:dateTime"
+          },
+          "attesterID": {
+            "@id": "polygon-vocab:attesterID",
+            "@type": "xsd:string"
+          },
+          "attesterRole": {
+            "@id": "polygon-vocab:attesterRole",
+            "@type": "xsd:string"
+          },
+          "attesterFormalRelation": {
+            "@id": "polygon-vocab:attesterFormalRelation",
+            "@type": "xsd:string"
+          },
+          "positionDetails": {
+            "@context": {
+              "employmentDateTo": {
+                "@id": "polygon-vocab:employmentDateTo",
+                "@type": "xsd:dateTime"
+              },
+              "employmentDateFrom": {
+                "@id": "polygon-vocab:employmentDateFrom",
+                "@type": "xsd:dateTime"
+              },
+              "recipientRole": {
+                "@id": "polygon-vocab:recipientRole",
+                "@type": "xsd:string"
+              },
+              "roleDescription": {
+                "@id": "polygon-vocab:roleDescription",
+                "@type": "xsd:string"
+              },
+              "employmentType": {
+                "@id": "polygon-vocab:employmentType",
+                "@type": "xsd:string"
+              },
+              "salary": {
+                "@context": {
+                  "salaryCurrencyIso": {
+                    "@id": "polygon-vocab:salaryCurrencyIso",
+                    "@type": "xsd:string"
+                  },
+                  "salaryValue": {
+                    "@id": "polygon-vocab:salaryValue",
+                    "@type": "xsd:double"
+                  },
+                  "salaryRate": {
+                    "@id": "polygon-vocab:salaryRate",
+                    "@type": "xsd:string"
+                  }
+                },
+                "@id": "polygon-vocab:salary"
+              }
+            },
+            "@id": "polygon-vocab:positionDetails"
+          },
+          "legalEmployer": {
+            "@context": {
+              "image": {
+                "@id": "polygon-vocab:image",
+                "@type": "xsd:string"
+              },
+              "employerIdentifier": {
+                "@id": "polygon-vocab:employerIdentifier",
+                "@type": "xsd:string"
+              },
+              "employerName": {
+                "@id": "polygon-vocab:employerName",
+                "@type": "xsd:string"
+              },
+              "employerType": {
+                "@id": "polygon-vocab:employerType",
+                "@type": "xsd:string"
+              },
+              "place": {
+                "@context": {
+                  "addressCountry": {
+                    "@id": "polygon-vocab:addressCountry",
+                    "@type": "xsd:string"
+                  },
+                  "addressRegion": {
+                    "@id": "polygon-vocab:addressRegion",
+                    "@type": "xsd:string"
+                  },
+                  "addressLocality": {
+                    "@id": "polygon-vocab:addressLocality",
+                    "@type": "xsd:string"
+                  },
+                  "placeName": {
+                    "@id": "polygon-vocab:placeName",
+                    "@type": "xsd:string"
+                  },
+                  "placeType": {
+                    "@id": "polygon-vocab:placeType",
+                    "@type": "xsd:string"
+                  }
+                },
+                "@id": "polygon-vocab:place"
+              }
+            },
+            "@id": "polygon-vocab:legalEmployer"
+          },
+          "recipient": {
+            "@context": {
+              "kycCredentialId": {
+                "@id": "polygon-vocab:kycCredentialId",
+                "@type": "xsd:string"
+              },
+              "familyName": {
+                "@id": "polygon-vocab:familyName",
+                "@type": "xsd:string"
+              },
+              "secondName": {
+                "@id": "polygon-vocab:secondName",
+                "@type": "xsd:string"
+              },
+              "firstName": {
+                "@id": "polygon-vocab:firstName",
+                "@type": "xsd:string"
+              }
+            },
+            "@id": "polygon-vocab:recipient"
+          }
+        },
+        "@id": "urn:uuid:b38cf060-38f5-4c79-be1f-fa86e5478590"
+      }
+    }
+  ]
+}

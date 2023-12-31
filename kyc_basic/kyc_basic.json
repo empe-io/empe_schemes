@@ -1,0 +1,149 @@
+{
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/kyc_basic/kyc_basic_ld.json"
+    },
+    "version": "1.0",
+    "type": "empeBasicKYC"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Basic confirmation of completed KYC procedure Performed via Empeiria (https://empe.io) application.",
+  "title": "Basic KYC Verified Credential",
+  "properties": {
+    "credentialSubject": {
+      "description": "Stores the data of the credential",
+      "title": "Credential subject",
+      "properties": {
+        "kycDate": {
+          "default": "YYYY-MM-DD",
+          "description": "Defines the date that KYC procedure was conducted.",
+          "title": "kyc_date",
+          "format": "date",
+          "type": "string"
+        },
+        "birthDay": {
+          "description": "Defines the day of the month from birth date of the person beeing the subject of the KYC procedure.",
+          "title": "birth_day",
+          "type": "integer"
+        },
+        "birthMonth": {
+          "description": "Defines the month of birth date of the person beeing the subject of the KYC procedure.",
+          "title": "birth_month",
+          "type": "integer"
+        },
+        "birthYear": {
+          "description": "Defines the year of birth fot the person beeing the subject of the KYC procedure.",
+          "title": "birth_year",
+          "type": "integer"
+        },
+        "dateOfBirth": {
+          "default": "YYYY-MM-DD",
+          "description": "Defines date of birth of the person beeing the credential subject.",
+          "title": "date_of_birth",
+          "format": "date",
+          "type": "string"
+        },
+        "familyName": {
+          "description": "Defines current family name(s) of the person beeing the credential subject.",
+          "title": "family_name",
+          "type": "string"
+        },
+        "secondName": {
+          "description": "Defines current second name of the person beeing the credential subject.",
+          "title": "second_name",
+          "type": "string"
+        },
+        "firstName": {
+          "description": "Defines current first name of the person beeing the credential subject.",
+          "title": "first_name",
+          "type": "string"
+        },
+        "id": {
+          "description": "Stores the DID of the subject that owns the credential",
+          "title": "Credential subject ID",
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kycDate",
+        "birthDay",
+        "birthMonth",
+        "birthYear",
+        "dateOfBirth",
+        "familyName",
+        "firstName"
+      ],
+      "type": "object"
+    },
+    "@context": {
+      "type": [
+        "string",
+        "array",
+        "object"
+      ]
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "format": "uri",
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "type": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "credentialSubject",
+    "@context",
+    "id",
+    "issuanceDate",
+    "issuer",
+    "type",
+    "credentialSchema"
+  ],
+  "type": "object"
+}

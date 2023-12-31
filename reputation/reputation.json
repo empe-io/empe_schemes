@@ -1,0 +1,128 @@
+{
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/reputation/reputation_ld.json"
+    },
+    "version": "1.0",
+    "type": "empeReputationLevel"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for verified credential confirming the achievement of a given level of reputation within Empeiria ecosystem",
+  "title": "Empeiria Reputation Level",
+  "properties": {
+    "credentialSubject": {
+      "description": "Stores the data of the credential",
+      "title": "Credential subject",
+      "properties": {
+        "maxReputationLevel": {
+          "description": "Max reputation level that the person being the subject of the credential can achieve within Empeiria ecosystem.",
+          "title": "Max reputation level",
+          "type": "string"
+        },
+        "reputationLevelDescription": {
+          "description": "Additional description of reputation level including definition and potential benefits.",
+          "title": "Reputation level description",
+          "type": "string"
+        },
+        "reputationAchievementDate": {
+          "default": "YYYY-MM-DD",
+          "description": "Date the person being the subject of the credential achieved given reputation level.",
+          "title": "Reputation achievement date",
+          "format": "date",
+          "type": "string"
+        },
+        "reputationLevelNumericalValue": {
+          "description": "Numerical representation of reputation level achieved within Empeiria ecosystem.",
+          "title": "Reputation level numerical value",
+          "type": "integer"
+        },
+        "reputationLevelName": {
+          "description": "Name of the reputation level achieved within Empeiria ecosystem.",
+          "title": "Reputation level name",
+          "type": "string"
+        },
+        "id": {
+          "description": "Stores the DID of the subject that owns the credential",
+          "title": "Credential subject ID",
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reputationAchievementDate",
+        "reputationLevelNumericalValue",
+        "reputationLevelName"
+      ],
+      "type": "object"
+    },
+    "@context": {
+      "type": [
+        "string",
+        "array",
+        "object"
+      ]
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "format": "uri",
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "type": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "credentialSubject",
+    "@context",
+    "id",
+    "issuanceDate",
+    "issuer",
+    "type",
+    "credentialSchema"
+  ],
+  "type": "object"
+}

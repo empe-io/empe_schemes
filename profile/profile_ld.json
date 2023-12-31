@@ -1,0 +1,39 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "personalinfo": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:c999f599-6451-451d-b663-9120ef30ed23#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "documentId": {
+            "@id": "polygon-vocab:documentId",
+            "@type": "xsd:string"
+          },
+          "country": {
+            "@id": "polygon-vocab:country",
+            "@type": "xsd:string"
+          },
+          "birthdate": {
+            "@id": "polygon-vocab:birthdate",
+            "@type": "xsd:string"
+          },
+          "lastName": {
+            "@id": "polygon-vocab:lastName",
+            "@type": "xsd:string"
+          },
+          "firstName": {
+            "@id": "polygon-vocab:firstName",
+            "@type": "xsd:string"
+          }
+        },
+        "@id": "urn:uuid:b9a8f849-96ab-4172-9fae-764c102374bb"
+      }
+    }
+  ]
+}

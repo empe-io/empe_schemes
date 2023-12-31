@@ -1,0 +1,51 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "empeBasicKYC": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:f6e3eb28-55c6-4525-a312-5b068f8a1712#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "kycDate": {
+            "@id": "polygon-vocab:kycDate",
+            "@type": "xsd:dateTime"
+          },
+          "birthDay": {
+            "@id": "polygon-vocab:birthDay",
+            "@type": "xsd:integer"
+          },
+          "birthMonth": {
+            "@id": "polygon-vocab:birthMonth",
+            "@type": "xsd:integer"
+          },
+          "birthYear": {
+            "@id": "polygon-vocab:birthYear",
+            "@type": "xsd:integer"
+          },
+          "dateOfBirth": {
+            "@id": "polygon-vocab:dateOfBirth",
+            "@type": "xsd:dateTime"
+          },
+          "familyName": {
+            "@id": "polygon-vocab:familyName",
+            "@type": "xsd:string"
+          },
+          "secondName": {
+            "@id": "polygon-vocab:secondName",
+            "@type": "xsd:string"
+          },
+          "firstName": {
+            "@id": "polygon-vocab:firstName",
+            "@type": "xsd:string"
+          }
+        },
+        "@id": "urn:uuid:dc92f3d3-e5cc-4157-b972-c03ecc6d8020"
+      }
+    }
+  ]
+}

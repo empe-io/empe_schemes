@@ -1,0 +1,119 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "empeKYC": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:a8c56352-f870-4e78-a8bf-21e2406468dd#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "kycDate": {
+            "@id": "polygon-vocab:kycDate",
+            "@type": "xsd:dateTime"
+          },
+          "additionalInfo": {
+            "@id": "polygon-vocab:additionalInfo",
+            "@type": "xsd:string"
+          },
+          "nationalityIso": {
+            "@id": "polygon-vocab:nationalityIso",
+            "@type": "xsd:string"
+          },
+          "nationality": {
+            "@id": "polygon-vocab:nationality",
+            "@type": "xsd:string"
+          },
+          "issuerOriginIso": {
+            "@id": "polygon-vocab:issuerOriginIso",
+            "@type": "xsd:string"
+          },
+          "issuerOriginFull": {
+            "@id": "polygon-vocab:issuerOriginFull",
+            "@type": "xsd:string"
+          },
+          "mrz": {
+            "@id": "polygon-vocab:mrz",
+            "@type": "xsd:string"
+          },
+          "documentExpiryDate": {
+            "@id": "polygon-vocab:documentExpiryDate",
+            "@type": "xsd:dateTime"
+          },
+          "documentIssueDate": {
+            "@id": "polygon-vocab:documentIssueDate",
+            "@type": "xsd:string"
+          },
+          "documentIssueAuthority": {
+            "@id": "polygon-vocab:documentIssueAuthority",
+            "@type": "xsd:string"
+          },
+          "documentID": {
+            "@id": "polygon-vocab:documentID",
+            "@type": "xsd:string"
+          },
+          "documentName": {
+            "@id": "polygon-vocab:documentName",
+            "@type": "xsd:string"
+          },
+          "faceIdenticalness": {
+            "@id": "polygon-vocab:faceIdenticalness",
+            "@type": "xsd:double"
+          },
+          "kycProcessor": {
+            "@id": "polygon-vocab:kycProcessor",
+            "@type": "xsd:string"
+          },
+          "gender": {
+            "@id": "polygon-vocab:gender",
+            "@type": "xsd:string"
+          },
+          "placeOfBirth": {
+            "@id": "polygon-vocab:placeOfBirth",
+            "@type": "xsd:string"
+          },
+          "nameAndFamilyNameAtBirth": {
+            "@id": "polygon-vocab:nameAndFamilyNameAtBirth",
+            "@type": "xsd:string"
+          },
+          "birthDay": {
+            "@id": "polygon-vocab:birthDay",
+            "@type": "xsd:integer"
+          },
+          "birthMonth": {
+            "@id": "polygon-vocab:birthMonth",
+            "@type": "xsd:integer"
+          },
+          "birthYear": {
+            "@id": "polygon-vocab:birthYear",
+            "@type": "xsd:integer"
+          },
+          "dateOfBirth": {
+            "@id": "polygon-vocab:dateOfBirth",
+            "@type": "xsd:dateTime"
+          },
+          "familyName": {
+            "@id": "polygon-vocab:familyName",
+            "@type": "xsd:string"
+          },
+          "secondName": {
+            "@id": "polygon-vocab:secondName",
+            "@type": "xsd:string"
+          },
+          "firstName": {
+            "@id": "polygon-vocab:firstName",
+            "@type": "xsd:string"
+          },
+          "personAlternateID": {
+            "@id": "polygon-vocab:personAlternateID",
+            "@type": "xsd:string"
+          }
+        },
+        "@id": "urn:uuid:df6d3ac8-d929-4836-9c3b-cb55490e3bd1"
+      }
+    }
+  ]
+}

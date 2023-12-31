@@ -1,0 +1,143 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "EmpeiriaPOAP": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:c9ea5872-89e8-487c-afdb-d15e90d8871a#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "proofType": {
+            "@id": "polygon-vocab:proofType",
+            "@type": "xsd:string"
+          },
+          "eventOrganizer": {
+            "@context": {
+              "representative": {
+                "@id": "polygon-vocab:representative",
+                "@type": "xsd:string"
+              },
+              "did": {
+                "@id": "polygon-vocab:did",
+                "@type": "xsd:string"
+              },
+              "uri": {
+                "@id": "polygon-vocab:uri",
+                "@type": "xsd:string"
+              },
+              "Image": {
+                "@id": "polygon-vocab:Image",
+                "@type": "xsd:string"
+              },
+              "Description": {
+                "@id": "polygon-vocab:Description",
+                "@type": "xsd:string"
+              },
+              "Email": {
+                "@id": "polygon-vocab:Email",
+                "@type": "xsd:string"
+              },
+              "Name": {
+                "@id": "polygon-vocab:Name",
+                "@type": "xsd:string"
+              },
+              "legalPerson": {
+                "@id": "polygon-vocab:legalPerson",
+                "@type": "xsd:string"
+              }
+            },
+            "@id": "polygon-vocab:eventOrganizer"
+          },
+          "eventData": {
+            "@context": {
+              "identifier": {
+                "@id": "polygon-vocab:identifier",
+                "@type": "xsd:string"
+              },
+              "additionalIData": {
+                "@id": "polygon-vocab:additionalIData",
+                "@type": "xsd:string"
+              },
+              "infoUrl": {
+                "@id": "polygon-vocab:infoUrl",
+                "@type": "xsd:string"
+              },
+              "eventType": {
+                "@id": "polygon-vocab:eventType",
+                "@type": "xsd:string"
+              },
+              "image": {
+                "@id": "polygon-vocab:image",
+                "@type": "xsd:string"
+              },
+              "relatedSkills": {
+                "@id": "polygon-vocab:relatedSkills",
+                "@type": "xsd:string"
+              },
+              "description": {
+                "@id": "polygon-vocab:description",
+                "@type": "xsd:string"
+              },
+              "date": {
+                "@id": "polygon-vocab:date",
+                "@type": "xsd:dateTime"
+              },
+              "name": {
+                "@id": "polygon-vocab:name",
+                "@type": "xsd:string"
+              },
+              "eventPlace": {
+                "@context": {
+                  "name": {
+                    "@id": "polygon-vocab:name",
+                    "@type": "xsd:string"
+                  },
+                  "addressLocality": {
+                    "@id": "polygon-vocab:addressLocality",
+                    "@type": "xsd:string"
+                  },
+                  "addressRegion": {
+                    "@id": "polygon-vocab:addressRegion",
+                    "@type": "xsd:string"
+                  },
+                  "addressCountry": {
+                    "@id": "polygon-vocab:addressCountry",
+                    "@type": "xsd:string"
+                  }
+                },
+                "@id": "polygon-vocab:eventPlace"
+              }
+            },
+            "@id": "polygon-vocab:eventData"
+          },
+          "shareAttributes": {
+            "@context": {
+              "text": {
+                "@id": "polygon-vocab:text",
+                "@type": "xsd:string"
+              },
+              "entityURL": {
+                "@id": "polygon-vocab:entityURL",
+                "@type": "xsd:string"
+              },
+              "Image": {
+                "@id": "polygon-vocab:Image",
+                "@type": "xsd:string"
+              },
+              "title": {
+                "@id": "polygon-vocab:title",
+                "@type": "xsd:string"
+              }
+            },
+            "@id": "polygon-vocab:shareAttributes"
+          }
+        },
+        "@id": "urn:uuid:d86e6889-c135-4dfd-a124-c28d6dd233c9"
+      }
+    }
+  ]
+}

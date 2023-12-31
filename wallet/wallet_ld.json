@@ -1,0 +1,31 @@
+{
+  "@context": [
+    {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "accountCreation": {
+        "@context": {
+          "@propagate": true,
+          "@protected": true,
+          "polygon-vocab": "urn:uuid:4b851a59-772d-40f7-863e-3d433d4eb37e#",
+          "xsd": "http://www.w3.org/2001/XMLSchema#",
+          "userID": {
+            "@id": "polygon-vocab:userID",
+            "@type": "xsd:string"
+          },
+          "accountOrigin": {
+            "@id": "polygon-vocab:accountOrigin",
+            "@type": "xsd:string"
+          },
+          "accountCreationTime": {
+            "@id": "polygon-vocab:accountCreationTime",
+            "@type": "xsd:dateTime"
+          }
+        },
+        "@id": "urn:uuid:2b4dc694-1166-4c67-9760-5f21461e3f0d"
+      }
+    }
+  ]
+}

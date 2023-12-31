@@ -1,0 +1,127 @@
+{
+  "$metadata": {
+    "uris": {
+      "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/profile/profile_ld.json"
+    },
+    "type": "personalinfo",
+    "version": "1.0"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Basic personal info (name, birthdate) ",
+  "title": "Basic personal info",
+  "properties": {
+    "credentialSubject": {
+      "description": "Stores the data of the credential",
+      "title": "Credential subject",
+      "properties": {
+        "documentId": {
+          "description": "National Document ID - for example passport number",
+          "title": "National Document ID",
+          "type": "string"
+        },
+        "country": {
+          "description": "Country of residence",
+          "title": "Country",
+          "type": "string"
+        },
+        "birthdate": {
+          "description": "Date of birth",
+          "title": "Birthdate",
+          "format": "date",
+          "type": "string"
+        },
+        "lastName": {
+          "description": "Last name",
+          "title": "Last Name",
+          "type": "string"
+        },
+        "firstName": {
+          "description": "First name",
+          "title": "First name",
+          "type": "string"
+        },
+        "id": {
+          "description": "Stores the DID of the subject that owns the credential",
+          "title": "Credential subject ID",
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "birthdate",
+        "lastName",
+        "firstName"
+      ],
+      "type": "object"
+    },
+    "@context": {
+      "type": [
+        "string",
+        "array",
+        "object"
+      ]
+    },
+    "expirationDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "issuanceDate": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "issuer": {
+      "type": [
+        "string",
+        "object"
+      ],
+      "format": "uri",
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "type": {
+      "type": [
+        "string",
+        "array"
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "credentialSchema": {
+      "properties": {
+        "id": {
+          "format": "uri",
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "credentialSubject",
+    "@context",
+    "id",
+    "issuanceDate",
+    "issuer",
+    "type",
+    "credentialSchema"
+  ],
+  "type": "object"
+}
