@@ -3,7 +3,7 @@
         "uris": {
             "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/proof_age_18/proof_age_18_ld"
         },
-        "type": "proofOfAge",
+        "type": "empeProofOfAge18",
         "version": "1.0"
     },
     "$schema": "https://json-schema.org/draft/2020-12/schema",
