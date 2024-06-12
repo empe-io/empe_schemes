@@ -2,7 +2,7 @@
   "$metadata": {
     "type": "empeTimestamp",
     "uris": {
-      "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/main/timestamp/timestamp_ld.json"
+      "jsonLdContext": "https://raw.githubusercontent.com/empe-io/empe_schemes/timestamp-schema/timestamp/timestamp_ld.json"
     },
     "version": "0.1"
   },
