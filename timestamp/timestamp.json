@@ -48,6 +48,7 @@
         "issuedAt": {
           "description": "IssuedAt description",
           "title": "issued_at",
+          "format": "timestamp",
           "type": "integer"
         },
         "id": {
