@@ -47,7 +47,7 @@
       "properties": {
         "issuedAt": {
           "description": "IssuedAt description",
-          "title": "issued_at",
+          "title": "issued at",
           "format": "timestamp",
           "type": "integer"
         },
