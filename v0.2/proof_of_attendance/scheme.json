@@ -60,23 +60,20 @@
         "event": {
           "description": "Represents the type of the event",
           "title": "Event",
-          "format": "uri",
           "type": "string"
         },
         "name": {
           "description": "Represents the name of the event or activity for which the Proof of Attendance is being issued.",
           "title": "Name",
-          "format": "uri",
           "type": "string"
         },
         "description": {
           "description": "Provides a detailed description of the event, including its purpose, significance, or any other relevant information.",
           "title": "Description",
-          "format": "uri",
           "type": "string"
         }
       },
-      "required": ["issuedAt", "event", "name", "descritpion"],
+      "required": ["issuedAt"],
       "type": "object"
     },
     "credentialSchema": {
