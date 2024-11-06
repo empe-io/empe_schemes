@@ -1,0 +1,80 @@
+{
+  "@context": [
+    {
+      "@version": 1.1,
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "BirthCertificate": {
+        "@id": "https://issuer-demo.empe.io/credentials/birth_certificate",
+        "@context": {
+          "firstName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/firstName",
+            "@type": "xsd:string"
+          },
+          "middleName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/middleName",
+            "@type": "xsd:string"
+          },
+          "lastName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/lastName",
+            "@type": "xsd:string"
+          },
+          "gender": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/gender",
+            "@type": "xsd:string"
+          },
+          "birthDate": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/birthDate",
+            "@type": "xsd:date"
+          },
+          "birthPlaceCountry": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/birthPlaceCountry",
+            "@type": "xsd:string"
+          },
+          "birthPlaceProvince": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/birthPlaceProvince",
+            "@type": "xsd:string"
+          },
+          "birthPlaceCity": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/birthPlaceCity",
+            "@type": "xsd:string"
+          },
+          "birthRight": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/birthRight",
+            "@type": "xsd:string"
+          },
+          "fatherFirstName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/fatherFirstName",
+            "@type": "xsd:string"
+          },
+          "fatherMiddleName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/fatherMiddleName",
+            "@type": "xsd:string"
+          },
+          "fatherLastName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/fatherLastName",
+            "@type": "xsd:string"
+          },
+          "motherFirstName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/motherFirstName",
+            "@type": "xsd:string"
+          },
+          "motherMiddleName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/motherMiddleName",
+            "@type": "xsd:string"
+          },
+          "motherLastName": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/motherLastName",
+            "@type": "xsd:string"
+          },
+          "issuedAt": {
+            "@id": "https://issuer-demo.empe.io/credentials/birth_certificate/issuedAt",
+            "@type": "xsd:dateTime"
+          }
+        }
+      },
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+  ]
+}
